@@ -1,3 +1,7 @@
+# Dataset
+
+python process.py
+
 # Partial
 
 darknet.exe partial .\cfg\yolov2-tiny-voc.cfg .\yolov2-tiny-voc.weights .\yolov2-tiny-voc.conv.13 13
