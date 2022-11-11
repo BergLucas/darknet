@@ -12,4 +12,4 @@ darknet.exe detector train .\cfg\obj.data .\cfg\yolov2-tiny-obj.cfg .\backup\yol
 
 # Detect
 
-darknet.exe detect .\cfg\yolov2-tiny.cfg .\backup\yolov2-tiny-voc_final.weights .\data\obj\pos-1.jpg
+darknet.exe detect .\cfg\yolov2-tiny-obj.cfg .\backup\yolov2-tiny-obj_best.weights .\data\obj\pos-1.jpg
