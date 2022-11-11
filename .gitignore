@@ -70,3 +70,4 @@ vcpkg/
 *.sln
 CMakeFiles
 data/obj/*
+*.conv.*
