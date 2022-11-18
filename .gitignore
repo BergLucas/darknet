@@ -71,3 +71,5 @@ vcpkg/
 CMakeFiles
 data/obj/*
 *.conv.*
+
+.jpg
