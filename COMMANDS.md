@@ -1,3 +1,7 @@
+# Create
+
+ffmpeg -i myvideo.avi -vf fps=8 myvideo/img%03d.jpg
+
 # Dataset
 
 python process.py
@@ -8,12 +12,12 @@ darknet.exe partial .\cfg\yolov2-tiny-voc.cfg .\yolov2-tiny-voc.weights .\yolov2
 
 # Train
 
-darknet.exe detector train .\cfg\obj.data .\cfg\yolov2-tiny-obj.cfg .\yolov2-tiny-voc.conv.13 -clear -map
+darknet.exe detector train .\cfg\coco.data .\cfg\yolov2-tiny-obj.cfg .\yolov2-tiny-voc.conv.13 -clear -map
 
 # Backup
 
-darknet.exe detector train .\cfg\obj.data .\cfg\yolov2-tiny-obj.cfg .\backup\yolov2-tiny-obj_last.weights -clear -map
+darknet.exe detector train .\cfg\coco.data .\cfg\yolov2-tiny-obj.cfg .\backup\yolov2-tiny-obj_last.weights -clear -map
 
 # Detect
 
-darknet.exe detect .\cfg\yolov2-tiny-obj.cfg .\backup\yolov2-tiny-obj_best.weights .\data\obj\pos-1.jpg
+darknet.exe detect .\cfg\yolov2-tiny-obj.cfg .\backup\yolov2-tiny-obj_best.weights .\data\obj\metal333.jpg
